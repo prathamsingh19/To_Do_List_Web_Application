@@ -1,6 +1,6 @@
 # To Do List Web Application 📃
 
-Welcome to the **AI Chatbot Web Application**! This project features a responsive chatbot powered by the **Gemini AI API**, crafted entirely with **HTML**, **CSS**, and **JavaScript**. 🌟
+Welcome to a **react to-do list app** that lets you add tasks with due dates, track their status, and easily delete them, all with a smooth, intuitive interface. 🌟
 
 ## 🚀 Features
 
