@@ -1,0 +1,157 @@
+/* src/TodoList.css */
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+.todo-list {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between sections */
+    padding: 20px;
+}
+
+.add-task-section {
+    flex: 1; /* Allow this section to take up 1 part of the available space */
+    padding-right: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: #1e1e1e; /* Dark background for add section */
+    margin-right: 20px; /* Space to the right of the add task section */
+    border: 1px solid #333; /* Darker border around the add task section */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.task-display-section {
+    flex: 2; /* Allow this section to take up 2 parts of the available space */
+    padding-left: 10px;
+    background-color: #1e1e1e; /* Dark background for task section */
+    border: 1px solid #333; /* Darker border around the task section */
+    border-radius: 4px; /* Rounded corners */
+    padding-right:10px;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .todo-list {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .add-task-section {
+        margin-right: 0; /* Remove right margin on mobile */
+        margin-bottom: 20px; /* Add space below the add task section */
+    }
+}
+
+h1 {
+    font-size: 24px; /* Font size for section titles */
+    margin-bottom: 20px; /* Space below titles */
+    color: #ffffff; /* White text for titles */
+}
+
+input[type="text"],
+input[type="datetime-local"],
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #555; /* Dark border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #333; /* Dark background for inputs */
+    color: #e0e0e0; /* Light text color */
+}
+
+textarea {
+    resize: none; /* Allow vertical resizing */
+    height: 100px; /* Set a default height */
+}
+
+.add-button,
+.delete-button {
+    background-color: #bb86fc; /* Light purple background for buttons */
+    color: #121212; /* Dark text for buttons */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: 5px;
+    margin-top: -20px;
+}
+
+.add-button:hover,
+.delete-button:hover {
+    background-color: #9a67ea; /* Darker purple on hover */
+}
+
+.task-count-bar {
+    background-color: #bb86fc; /* Light purple background for the bar */
+    color: #121212; /* Dark text color */
+    padding: 10px; /* Padding for spacing */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the bar */
+    text-align: left; /* Align text to the left */
+    font-weight: bold; /* Make text bold */
+    width: 60px; /* Set a specific width */
+}
+
+.task-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.task-item {
+    margin-bottom: 15px; /* Space between tasks */
+    border: 1px solid #444; /* Dark border around each task */
+    padding: 10px; /* Padding inside task item */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #2c2c2c; /* Dark background for tasks */
+}
+
+.task-item strong {
+    display: block; /* Make title block-level */
+    margin-bottom: 5px; /* Space below title */
+    color: #ffffff; /* White text for task titles */
+}
+
+.task-item p {
+    margin: 5px 0; /* Margin for paragraphs */
+}
+
+
+.task-item p em span{
+    color: red;
+    font-style: normal;
+}
+
+.task-item button {
+    float: right; /* Align delete button to the right */
+    background-color: #ff4444; /* Red background for delete button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 5px 10px; /* Padding for delete button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.task-item button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.dead-btn{
+    color: #fff;
+    font-weight: 200;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.done-button{
+    margin-top: -20px;
+}
+
+.add-button{
+    margin-top: 2px;
+}
